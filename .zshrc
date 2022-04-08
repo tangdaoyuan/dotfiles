@@ -15,6 +15,18 @@ plugins=(
   zsh-z
 )
 
+# accelerate theme loading
+SPACESHIP_PROMPT_ORDER=(
+  time     #
+  vi_mode  # these sections will be
+  user     # before prompt char
+  host     #
+  char
+  dir
+  git
+  node
+)
+
 # https://ohmyz.sh/
 source $ZSH/oh-my-zsh.sh
 
